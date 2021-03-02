@@ -1,0 +1,10 @@
+/node_modules/**
+/.nuxt/**
+yarn.lock
+package.json
+CHANGELOG.md
+README.md
+.env
+changelog.config.js
+assets/css/fonts.css
+assets/fonts/**

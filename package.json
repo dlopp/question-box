@@ -1,0 +1,47 @@
+{
+  "name": "question-box",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:eslint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:prettier": "prettier . --check --ignore-path .prettierignore",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint": "yarn lint:eslint && yarn lint:prettier && yarn lint:style",
+    "format": "yarn lint:eslint --fix && yarn lint:prettier --write && yarn lint:style --fix"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "core-js": "^3.8.2",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.4.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
