@@ -47,7 +47,7 @@ module.exports = {
     },
     UI: {
       description: 'UIやスタイルの更新',
-      emoji: ':lipstick:',
+      emoji: ':art:',
       value: 'UI',
     },
     docs: {
@@ -62,7 +62,7 @@ module.exports = {
     },
     fix: {
       description: 'バグ修正',
-      emoji: ':bug:',
+      emoji: ':adhesive_bandage:',
       value: 'fix',
     },
     refactor: {
