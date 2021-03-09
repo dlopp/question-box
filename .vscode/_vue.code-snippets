@@ -1,0 +1,34 @@
+// vscode snippets
+// 使い方 ↓
+// https://rfs.jp/sb/vsc/vsc-snippet.html
+// ${0}に補完後のカーソルの位置が入ります。その他特殊なやつは、上のリンク or Google を参照してください。
+// 正規表現が使えます。正規表現については Googel or 下記リンク参照
+// https://murashun.jp/article/programming/regular-expression.html
+
+{
+  // サジェストに表示される名前
+  "script": {
+    // 呼び出すトリガー
+    "prefix": "script",
+    // 展開されるコード
+    "body": [
+      "<script>",
+      "export default {",
+      "\t${0}",
+      "}",
+      "</script>"
+    ],
+    // snipettsの説明文
+    "description": "<script>"
+  },
+  // この下に続ける
+  "template": {
+    "prefix": "template",
+    "body": [
+      "<template>",
+      "\t${0}",
+      "</template>"
+    ],
+    "description": "<template>"
+  }
+}
