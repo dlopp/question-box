@@ -14,6 +14,7 @@
     "format": "yarn lint:eslint --fix && yarn lint:prettier --write && yarn lint:style --fix"
   },
   "lint-staged": {
+    "*.{js,vue,json}": "prettier -c",
     "*.{js,vue}": "eslint",
     "*.{css,vue}": "stylelint"
   },
