@@ -30,5 +30,14 @@
       "</template>"
     ],
     "description": "<template>"
+  },
+  "comment": {
+    "prefix": "/**/",
+    "body": [
+      "/*",
+      "\t${0}",
+      "*/"
+    ],
+    "description": "複数行のコメント"
   }
 }
