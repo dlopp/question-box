@@ -10,44 +10,42 @@
         class="bg-gray-200"
       ></textarea>
       <div>
-        <button type="submit" class="bg-gray-600">質問を送信する</button>
+        <div v-if="isSending">
+          <span>送信中</span>
+        </div>
+        <button v-else type="submit" class="bg-gray-600">質問を送信する</button>
       </div>
     </form>
-    <ul class="mt-16">
-      <li v-for="(question, index) in questions" :key="index">
-        {{ question }}
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ app }) {
-    const questions = []
-    await app.$fire.firestore
-      .collection('questions')
-      .get()
-      .then((query) => {
-        query.forEach((doc) => {
-          const data = doc.data()
-          questions.push(data.body)
-        })
-      })
-    return { questions }
-  },
   data() {
     return {
       textInput: '',
+      isSending: false,
     }
   },
   methods: {
     async onSubmit() {
+      if (!this.textInput.length) {
+        this.$toast.error('質問を入力してください')
+        return
+      }
+      // 送信中はbuttonを消す(連投防止)
+      this.isSending = true
+      // dbに質問内容を送信
       await this.$fire.firestore.collection('questions').add({
         body: this.textInput,
+        isReplied: false,
+        createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
       })
+      // textareaを空に
       this.textInput = ''
-      alert('質問が送信されました。')
+      // 送信完了
+      this.isSending = false
+      this.$toast.success('送信されました')
     },
   },
 }
