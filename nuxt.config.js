@@ -42,6 +42,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     [
+      // https://firebase.nuxtjs.org/
       '@nuxtjs/firebase',
       {
         config: {
@@ -59,6 +60,8 @@ export default {
         },
       },
     ],
+    // https://www.npmjs.com/package/@nuxtjs/toast
+    ['@nuxtjs/toast'],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -66,5 +69,12 @@ export default {
     // Cache management of modules with hard-source-webpack-plugin
     // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#hardsource
     hardSource: true,
+  },
+
+  // vue-tosted settings
+  // https://github.com/shakee93/vue-toasted
+  toast: {
+    position: 'top-right',
+    duration: 5000,
   },
 }
