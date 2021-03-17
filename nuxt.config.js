@@ -40,7 +40,26 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyC_kRL_MVg8cZtKOw7Kb5djw2VNxwDfz6g',
+          authDomain: 'question-box-4f79d.firebaseapp.com',
+          projectId: 'question-box-4f79d',
+          storageBucket: 'question-box-4f79d.appspot.com',
+          messagingSenderId: '657300146222',
+          appId: '1:657300146222:web:1ab3ff13a5e3c18214f7bf',
+          measurementId: 'G-0BMMPN8SGV',
+        },
+        services: {
+          firestore: true,
+          analytics: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
