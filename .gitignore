@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# @nuxtjs/google-fonts (https://google-fonts.nuxtjs.org)
+assets/css/fonts.css
+assets/fonts
