@@ -4,6 +4,7 @@
       <nuxt-link :to="'/admin/questions/' + question.id">{{
         question.body
       }}</nuxt-link>
+      <span v-if="question.isReplied">回答済み</span>
     </li>
   </ul>
 </template>

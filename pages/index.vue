@@ -16,11 +16,31 @@
         <button v-else type="submit" class="bg-gray-600">質問を送信する</button>
       </div>
     </form>
+    <ul>
+      <li v-for="(question, index) in questions" :key="index">
+        {{ question.body }} | {{ question.answer }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
+  async asyncData({ app }) {
+    const questions = []
+    await app.$fire.firestore
+      .collection('questions')
+      .where('isReplied', '==', true)
+      .get()
+      .then((query) => {
+        query.forEach((doc) => {
+          const question = doc.data()
+          question.id = doc.id
+          questions.push(question)
+        })
+      })
+    return { questions }
+  },
   data() {
     return {
       textInput: '',
@@ -40,8 +60,8 @@ export default {
         body: this.textInput,
         isReplied: false,
         createdAt: this.$fireModule.firestore.FieldValue.serverTimestamp(),
+        answer: '',
       })
-      // textareaを空に
       this.textInput = ''
       // 送信完了
       this.isSending = false
