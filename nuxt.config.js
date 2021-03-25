@@ -37,6 +37,18 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://google-fonts.nuxtjs.org
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          'M+PLUS+1p': [100, 300, 400, 500, 700, 800, 900],
+        },
+        display: 'block',
+        download: true, // font optimization
+        inject: true,
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
