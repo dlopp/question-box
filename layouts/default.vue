@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LayoutsHeader />
     <LayoutsContainer>
       <Nuxt />
     </LayoutsContainer>
