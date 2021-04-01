@@ -26,6 +26,7 @@
 
 <script>
 export default {
+  middleware: 'authenticated',
   // 質問内容を取得する処理
   async asyncData({ app, params }) {
     const questionDoc = await app.$fire.firestore
