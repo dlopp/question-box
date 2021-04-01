@@ -15,6 +15,12 @@ module.exports = {
         main: '#87DAD6',
         accent: '#FFE45A',
       },
+      spacing: {
+        bw: '305.6px',
+        sw: '150px',
+        bh: '65.6px',
+        sh: '32px',
+      },
     },
     screens: {
       xs: '475px',
