@@ -1,15 +1,20 @@
 <template>
-  <ul>
-    <li v-for="(question, index) in questions" :key="index">
-      <nuxt-link :to="'/admin/questions/' + question.id">{{
-        question.body
-      }}</nuxt-link>
-      <span v-if="question.isReplied">回答済み</span>
-    </li>
-  </ul>
+  <div>
+    <button @click="logout">ログアウト</button>
+    <ul>
+      <li v-for="(question, index) in questions" :key="index">
+        <nuxt-link :to="'/admin/questions/' + question.id">{{
+          question.body
+        }}</nuxt-link>
+        <span v-if="question.isReplied">回答済み</span>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
 export default {
   middleware: 'authenticated',
   async asyncData({ app }) {
@@ -26,6 +31,14 @@ export default {
         })
       })
     return { questions }
+  },
+  methods: {
+    logout() {
+      Cookie.remove('auth')
+      this.$store.commit('mutateAuth', null)
+      this.$fire.auth.signOut()
+      this.$router.push('/admin/login')
+    },
   },
 }
 </script>
