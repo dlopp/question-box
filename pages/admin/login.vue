@@ -44,6 +44,8 @@
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
 export default {
   middleware: 'notAuthenticated',
 
@@ -70,7 +72,8 @@ export default {
         })
       // あってたら、authをstoreにcommitして保持
       if (auth) {
-        this.$store.commit('mutateAuth', auth)
+        this.$store.commit('mutateAuth', auth) // csr
+        Cookie.set('auth', auth) // ssr
         this.$router.push('/admin/questions')
       }
     },
