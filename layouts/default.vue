@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Container>
+    <LayoutsContainer>
       <Nuxt />
-    </Container>
+    </LayoutsContainer>
   </div>
 </template>
 
