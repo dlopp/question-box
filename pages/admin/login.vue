@@ -47,8 +47,6 @@
 const Cookie = process.client ? require('js-cookie') : undefined
 
 export default {
-  middleware: 'notAuthenticated',
-
   data() {
     return {
       email: '',
@@ -73,7 +71,7 @@ export default {
       // あってたら、authをstoreにcommitして保持
       if (auth) {
         this.$store.commit('mutateAuth', auth) // csr
-        Cookie.set('auth', auth) // ssr
+        Cookie.set('auth', auth)
         this.$router.push('/admin/questions')
       }
     },
