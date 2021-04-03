@@ -37,17 +37,17 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: '',
+          content: `https://dlopp-questionbox.netlify.app/answers/${this.answer.id}`,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '',
+          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35:${this.question.body},co_rgb:333,w_600,c_fit/v1617435093/ogp1_y1qzqf.png`,
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: '',
+          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35:${this.question.body},co_rgb:333,w_600,c_fit/v1617435093/ogp1_y1qzqf.png`,
         },
       ],
     }
