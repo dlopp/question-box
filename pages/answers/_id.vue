@@ -24,5 +24,33 @@ export default {
     const question = questionDoc.data()
     return { answer, question }
   },
+  head() {
+    return {
+      title: this.question.body,
+      meta: [
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        { hid: 'og:title', property: 'og:title', content: this.question.body },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: '',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: '',
+        },
+      ],
+    }
+  },
 }
 </script>
