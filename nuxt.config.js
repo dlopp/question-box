@@ -126,13 +126,4 @@ export default {
     position: 'top-right',
     duration: 5000,
   },
-
-  // key
-  // https://ja.nuxtjs.org/docs/2.x/configuration-glossary/configuration-runtime-config/
-  publicRuntimeConfig: {
-    apiURL: process.env.API_URL,
-  },
-  privateRuntimeConfig: {
-    secret: process.env.GCP_CREDENTIAL,
-  },
 }
