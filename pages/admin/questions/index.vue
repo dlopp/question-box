@@ -13,8 +13,6 @@
 </template>
 
 <script>
-const Cookie = process.client ? require('js-cookie') : undefined
-
 export default {
   middleware: 'authenticated',
   async asyncData({ app }) {
@@ -34,7 +32,6 @@ export default {
   },
   methods: {
     logout() {
-      Cookie.remove('auth')
       this.$store.commit('mutateAuth', null)
       this.$fire.auth.signOut()
       this.$router.push('/admin/login')

@@ -44,8 +44,6 @@
 </template>
 
 <script>
-const Cookie = process.client ? require('js-cookie') : undefined
-
 export default {
   data() {
     return {
@@ -70,8 +68,7 @@ export default {
         })
       // あってたら、authをstoreにcommitして保持
       if (auth) {
-        this.$store.commit('mutateAuth', auth) // csr
-        Cookie.set('auth', auth)
+        this.$store.commit('mutateAuth', auth)
         this.$router.push('/admin/questions')
       }
     },
