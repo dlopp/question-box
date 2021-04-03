@@ -1,6 +1,6 @@
 export default {
   // SSR: https://go.nuxtjs.dev/config-ssr
-  ssr: true,
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -114,11 +114,7 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    // Cache management of modules with hard-source-webpack-plugin
-    // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#hardsource
-    hardSource: true,
-  },
+  build: {},
 
   // vue-tosted settings
   // https://github.com/shakee93/vue-toasted
