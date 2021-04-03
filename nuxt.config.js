@@ -27,7 +27,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: '',
+        content: 'https://dlopp-questionbox.netlify.app',
       },
       {
         hid: 'og:title',
