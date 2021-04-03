@@ -25,7 +25,10 @@
 </template>
 
 <script>
+import Meta from '~/assets/mixins/meta'
+
 export default {
+  mixins: [Meta],
   async asyncData({ app }) {
     const questions = []
     await app.$fire.firestore
@@ -45,6 +48,12 @@ export default {
     return {
       textInput: '',
       isSending: false,
+    }
+  },
+  head() {
+    return {
+      titleTemplate: null,
+      title: 'dlopp専用質問箱！',
     }
   },
   methods: {
