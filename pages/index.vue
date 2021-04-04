@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>質問しよう</h1>
-    <form @submit.prevent="onSubmit">
+    <form class="mb-12" @submit.prevent="onSubmit">
       <textarea
         v-model="textInput"
         placeholder="質問を入力してください"
@@ -16,11 +16,14 @@
         <button v-else type="submit" class="bg-gray-600">質問を送信する</button>
       </div>
     </form>
-    <ul>
-      <li v-for="(question, index) in questions" :key="index">
-        {{ question.body }} | {{ question.answer }}
-      </li>
-    </ul>
+    <div class="bg-gray py-12">
+      <PartsQandA
+        v-for="(question, index) in questions"
+        :key="index"
+        :question="question.body"
+        :answer="question.answer"
+      />
+    </div>
   </div>
 </template>
 

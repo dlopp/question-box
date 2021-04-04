@@ -14,6 +14,8 @@ module.exports = {
       colors: {
         main: '#87DAD6',
         accent: '#FFE45A',
+        details: '#EDFAF9',
+        gray: '#F2F2F2',
       },
     },
     screens: {
