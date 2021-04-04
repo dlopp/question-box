@@ -1,28 +1,34 @@
 <template>
   <div>
-    <h1>質問しよう</h1>
-    <form class="mb-12" @submit.prevent="onSubmit">
-      <textarea
-        v-model="textInput"
-        placeholder="質問を入力してください"
-        cols="30"
-        rows="10"
-        class="bg-gray-200"
-      ></textarea>
-      <div>
-        <div v-if="isSending">
-          <span>送信中</span>
+    <LayoutsContainer>
+      <h1>質問しよう</h1>
+      <form class="mb-12" @submit.prevent="onSubmit">
+        <textarea
+          v-model="textInput"
+          placeholder="質問を入力してください"
+          cols="30"
+          rows="10"
+          class="bg-gray-200"
+        ></textarea>
+        <div>
+          <div v-if="isSending">
+            <span>送信中</span>
+          </div>
+          <button v-else type="submit" class="bg-gray-600">
+            質問を送信する
+          </button>
         </div>
-        <button v-else type="submit" class="bg-gray-600">質問を送信する</button>
-      </div>
-    </form>
+      </form>
+    </LayoutsContainer>
     <div class="bg-gray py-12">
-      <PartsQandA
-        v-for="(question, index) in questions"
-        :key="index"
-        :question="question.body"
-        :answer="question.answer"
-      />
+      <LayoutsContainer>
+        <PartsQandA
+          v-for="(question, index) in questions"
+          :key="index"
+          :question="question.body"
+          :answer="question.answer"
+        />
+      </LayoutsContainer>
     </div>
   </div>
 </template>
