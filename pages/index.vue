@@ -20,6 +20,12 @@
         </div>
       </form>
     </LayoutsContainer>
+    <PartsTitle
+      title="過去に答えた質問"
+      :img-src="srcQA"
+      img-alt="QandAのアイコン"
+      class="-mb-6"
+    />
     <div class="bg-gray py-12">
       <LayoutsContainer>
         <PartsQandA
@@ -35,6 +41,7 @@
 
 <script>
 import Meta from '~/assets/mixins/meta'
+import qaImage from '~/assets/images/qa.png'
 
 export default {
   mixins: [Meta],
@@ -57,6 +64,7 @@ export default {
     return {
       textInput: '',
       isSending: false,
+      srcQA: qaImage,
     }
   },
   head() {
