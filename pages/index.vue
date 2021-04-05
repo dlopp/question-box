@@ -24,9 +24,9 @@
       title="過去に答えた質問"
       :img-src="srcQA"
       img-alt="QandAのアイコン"
-      class="-mb-6"
+      class="-mb-8"
     />
-    <div class="bg-gray py-12">
+    <div class="bg-gray py-16">
       <LayoutsContainer>
         <PartsQandA
           v-for="(question, index) in questions"

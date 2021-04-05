@@ -1,7 +1,7 @@
 <template>
   <div>
-    <img class="mx-auto h-6 md:h-8 mb-1 md:mb-2" :src="imgSrc" :alt="imgAlt" />
-    <h2 class="text-center text-sm md:text-base">
+    <img class="mx-auto h-8 md:h-10 mb-1 md:mb-3" :src="imgSrc" :alt="imgAlt" />
+    <h2 class="text-center text-base md:text-xl">
       {{ title }}
     </h2>
   </div>
