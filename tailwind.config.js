@@ -17,6 +17,12 @@ module.exports = {
         details: '#EDFAF9',
         gray: '#F2F2F2',
       },
+      spacing: {
+        bw: '305.6px',
+        sw: '150px',
+        bh: '65.6px',
+        sh: '32px',
+      },
     },
     screens: {
       xs: '475px',
