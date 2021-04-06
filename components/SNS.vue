@@ -1,5 +1,5 @@
 <template>
-  <LayoutsContainer>
+  <div>
     <PartsTitle
       title="SNS"
       :img-src="srcSNS"
@@ -16,7 +16,7 @@
         <a href="https://dlopp-docs.netlify.app">dlopp公式ブログ</a>
       </li>
     </ul>
-  </LayoutsContainer>
+  </div>
 </template>
 
 <script>
