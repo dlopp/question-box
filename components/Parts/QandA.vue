@@ -8,7 +8,7 @@
       />
       <button
         type="button"
-        class="h-12 w-full text-left pl-5"
+        class="h-12 w-full text-left pl-5 text-sm md:text-base"
         style="outline: none"
         @click="accordionToggle()"
       >
@@ -40,7 +40,7 @@
           src="~/assets/images/answer.png"
           alt="Aのアイコン"
         />
-        <p class="pl-5 leading-6 pr-4">
+        <p class="pl-5 leading-6 pr-4 text-sm md:text-base">
           {{ answer }}
         </p>
       </div>
