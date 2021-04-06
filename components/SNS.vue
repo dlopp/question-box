@@ -1,6 +1,11 @@
 <template>
   <LayoutsContainer>
-    <PartsTitle title="SNS" :img-src="srcSNS" img-alt="しずくのアイコン" />
+    <PartsTitle
+      title="SNS"
+      :img-src="srcSNS"
+      img-alt="しずくのアイコン"
+      class="mb-5 md:mb-8"
+    />
     <ul
       class="flex justify-between items-center px-1 mx-auto md:max-w-sm max-w-xs"
     >
