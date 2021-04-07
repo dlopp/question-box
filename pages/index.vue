@@ -51,6 +51,7 @@ export default {
     await app.$fire.firestore
       .collection('questions')
       .where('isReplied', '==', true)
+      .orderBy('createdAt', 'desc')
       .get()
       .then((query) => {
         query.forEach((doc) => {
