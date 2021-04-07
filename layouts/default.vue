@@ -34,6 +34,8 @@ h4,
 h5,
 h6,
 button,
+input,
+textarea,
 a {
   transform: rotate(0.03deg);
   -moz-transform: rotate(0.03deg);
