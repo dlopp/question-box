@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <main>
+    <HeadLine />
     <LayoutsContainer>
       <h1>質問しよう</h1>
       <form class="mb-12" @submit.prevent="onSubmit">
@@ -35,11 +36,11 @@
           :answer="question.answer"
         />
       </LayoutsContainer>
+      <LayoutsContainer class="mt-6 mb-6">
+        <SNS />
+      </LayoutsContainer>
     </div>
-    <LayoutsContainer class="mt-6 mb-6">
-      <SNS />
-    </LayoutsContainer>
-  </div>
+  </main>
 </template>
 
 <script>
