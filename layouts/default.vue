@@ -33,7 +33,8 @@ h3,
 h4,
 h5,
 h6,
-button {
+button,
+a {
   transform: rotate(0.03deg);
   -moz-transform: rotate(0.03deg);
   -ms-transform: rotate(0.03deg);

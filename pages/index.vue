@@ -36,6 +36,9 @@
         />
       </LayoutsContainer>
     </div>
+    <LayoutsContainer class="mt-6 mb-6">
+      <SNS />
+    </LayoutsContainer>
   </div>
 </template>
 
