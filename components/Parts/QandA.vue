@@ -40,7 +40,9 @@
           src="~/assets/images/answer.png"
           alt="Aのアイコン"
         />
-        <p class="pl-5 leading-6 pr-4 text-sm md:text-base">
+        <p
+          class="pl-5 leading-6 pr-4 -mt-6 text-sm md:text-base whitespace-pre-line"
+        >
           {{ answer }}
         </p>
       </div>
