@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex justify-center items-center rounded-full text-base w-sw h-sh md:text-lg md:w-bw md:h-bh"
+    class="flex justify-center items-center rounded-full text-base w-36 h-9 md:text-lg md:w-62 md:h-14"
     :class="bgColor"
     @click.prevent="onClick"
   >
