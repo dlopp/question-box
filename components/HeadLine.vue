@@ -10,9 +10,30 @@
         専用質問箱へようこそ！
       </p>
       <div class="justify-center flex mt-8">
-        <PartsButton class="mr-8 hidden md:block" message="質問をする" />
-        <PartsButton class="hidden md:block" message="過去の質問を見る" />
+        <PartsButton
+          class="mr-8 hidden md:block"
+          message="質問をする"
+          @linkClick="toDoQuestion"
+        />
+        <PartsButton
+          class="hidden md:block"
+          message="過去の質問を見る"
+          @linkClick="toPastQuestions"
+        />
       </div>
     </LayoutsContainer>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toDoQuestion() {
+      this.$emit('toDoQuestion')
+    },
+    toPastQuestions() {
+      this.$emit('toPastQuestions')
+    },
+  },
+}
+</script>

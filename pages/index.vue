@@ -1,8 +1,9 @@
 <template>
   <main>
-    <HeadLine />
+    <HeadLine @toPastQuestions="toPastQuestions" @toDoQuestion="toDoQuestion" />
     <LayoutsContainer>
       <PartsTitle
+        id="doQuestion"
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
@@ -16,6 +17,7 @@
       />
     </LayoutsContainer>
     <PartsTitle
+      id="pastQuestions"
       title="過去に答えた質問"
       :img-src="srcQA"
       img-alt="QandAのアイコン"
@@ -92,6 +94,12 @@ export default {
       // 送信完了
       this.isSending = false
       this.$toast.success('送信されました')
+    },
+    toDoQuestion() {
+      this.$scrollTo('#doQuestion')
+    },
+    toPastQuestions() {
+      this.$scrollTo('#pastQuestions')
     },
   },
 }

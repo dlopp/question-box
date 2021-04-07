@@ -12,13 +12,9 @@
     <div v-if="isSending">
       <span>送信中</span>
     </div>
-    <PartsButton
-      v-else
-      message="送信する"
-      bg-color="bg-accent"
-      class="mx-auto mt-6"
-      @click="onClick"
-    />
+    <div v-else class="justify-center flex mt-6">
+      <PartsButton message="送信する" bg-color="bg-accent" @click="onClick" />
+    </div>
   </form>
 </template>
 

@@ -1,12 +1,14 @@
 <template>
-  <button
-    class="flex justify-center items-center rounded-full text-base w-36 h-9 md:text-lg md:w-62 md:h-14"
-    :class="bgColor"
-    style="outline: none"
-    @click.prevent="onClick"
-  >
-    {{ message }}
-  </button>
+  <a class="cursor-pointer" @click="linkClick">
+    <button
+      class="flex justify-center items-center rounded-full text-base w-36 h-9 md:text-lg md:w-62 md:h-14"
+      :class="bgColor"
+      style="outline: none"
+      @click.prevent="onClick"
+    >
+      {{ message }}
+    </button>
+  </a>
 </template>
 
 <script>
@@ -24,6 +26,9 @@ export default {
   methods: {
     onClick() {
       this.$emit('click')
+    },
+    linkClick() {
+      this.$emit('linkClick')
     },
   },
 }
