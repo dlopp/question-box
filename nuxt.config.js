@@ -78,7 +78,7 @@ export default {
       '@nuxtjs/google-fonts',
       {
         families: {
-          'M+PLUS+1p': [100, 300, 400, 500, 700, 800, 900],
+          'M+PLUS+1p': [400],
         },
         display: 'block',
         download: true, // font optimization
