@@ -1,7 +1,7 @@
 <template>
   <main>
     <HeadLine
-      class="mb-20"
+      class="md:mb-20 mb-6"
       @toPastQuestions="toPastQuestions"
       @toDoQuestion="toDoQuestion"
     />
@@ -11,7 +11,7 @@
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
-        class="mt-12 mb-8"
+        class="mb-8"
       />
       <Form
         v-model="questionBody"
