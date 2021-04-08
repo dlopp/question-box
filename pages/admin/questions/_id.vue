@@ -2,7 +2,7 @@
   <LayoutsContainer>
     <h2 class="mt-3">{{ question.body }}</h2>
     <div>
-      <h3 v-if="(question.isReplied = false)" class="mt-6">
+      <h3 v-if="question.isReplied" class="mt-6">
         {{ question.answer }}
       </h3>
       <form v-else @submit.prevent="onSubmit">
