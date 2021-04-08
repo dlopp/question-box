@@ -109,8 +109,6 @@ export default {
         },
       },
     ],
-    // https://www.npmjs.com/package/@nuxtjs/toast
-    ['@nuxtjs/toast'],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

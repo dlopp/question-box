@@ -71,7 +71,7 @@ export default {
       })
       this.textInput = ''
       this.isSending = false
-      this.$toast.success('送信されました')
+      alert('送信されました')
     },
   },
 }

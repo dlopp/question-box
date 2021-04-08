@@ -86,7 +86,7 @@ export default {
   methods: {
     async onSubmit() {
       if (!this.questionBody.length) {
-        this.$toast.error('質問を入力してください')
+        alert('質問を入力してください')
         return
       }
       // 送信中はbuttonを消す(連投防止)
@@ -101,7 +101,7 @@ export default {
       this.questionBody = ''
       // 送信完了
       this.isSending = false
-      this.$toast.success('送信されました')
+      alert('送信されました。')
     },
     toDoQuestion() {
       this.$scrollTo('#doQuestion')
