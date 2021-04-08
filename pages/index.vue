@@ -1,12 +1,12 @@
 <template>
   <main>
-    <HeadLine class="md:mb-20 mb-6" />
-    <LayoutsContainer>
+    <HeadLine />
+    <LayoutsContainer class="md:-mt-20">
       <PartsTitle
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
-        class="mb-8"
+        class="mb-3"
       />
       <Form
         v-model="questionBody"
@@ -19,9 +19,11 @@
       title="過去に答えた質問"
       :img-src="srcQA"
       img-alt="QandAのアイコン"
-      class="-mb-8 mt-24"
+      class="-mb-24 mt-12"
+      img-size="h-10"
+      margin="mb-2"
     />
-    <div class="bg-gray py-24 relative mt-10">
+    <div class="bg-gray pt-20 pb-16 relative mt-10" style="z-index: -2">
       <ShapesMiddle />
       <LayoutsContainer>
         <PartsQandA
@@ -33,7 +35,7 @@
       </LayoutsContainer>
       <ShapesMiddle :is-top="false" />
     </div>
-    <LayoutsContainer class="mt-12 mb-20">
+    <LayoutsContainer class="mb-16">
       <SNS />
     </LayoutsContainer>
   </main>

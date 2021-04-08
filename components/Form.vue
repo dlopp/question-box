@@ -1,6 +1,6 @@
 <template>
   <form>
-    <div class="w-10/12 sm:w-full mx-auto h-36 md:h-48">
+    <div class="w-10/12 sm:w-full mx-auto h-36">
       <textarea
         :value="formBody"
         :placeholder="placeholder"
@@ -12,7 +12,7 @@
     <div v-if="isSending">
       <span>送信中</span>
     </div>
-    <div v-else class="justify-center flex mt-6">
+    <div v-else class="justify-center flex mt-4">
       <PartsButton message="送信する" bg-color="bg-accent" @click="onClick" />
     </div>
   </form>

@@ -4,8 +4,9 @@
       title="SNS"
       :img-src="srcSNS"
       img-alt="しずくのアイコン"
-      img-size="h-14"
+      img-size="h-12"
       class="mb-5 md:mb-8"
+      text-size="text-lg"
     />
     <ul
       class="flex justify-between items-center px-1 text-lg mx-auto md:max-w-sm max-w-xs"
