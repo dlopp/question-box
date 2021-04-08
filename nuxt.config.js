@@ -42,7 +42,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '',
+        content: 'https://i.gyazo.com/7e78800509eeea105f2fbbcf09c028aa.png',
       },
       {
         name: 'twitter:card',

@@ -43,12 +43,12 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35:${this.question.body},co_rgb:333,w_600,c_fit/v1617435093/ogp1_y1qzqf.png`,
+          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:言語は何を使用しているんですか？%20自分Pythonなんですが大丈夫ですか？,co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35:${this.question.body},co_rgb:333,w_600,c_fit/v1617435093/ogp1_y1qzqf.png`,
+          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${this.question.body},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
         },
       ],
     }
