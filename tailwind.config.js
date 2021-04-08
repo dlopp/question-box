@@ -16,12 +16,14 @@ module.exports = {
         accent: '#FFE45A',
         details: '#EDFAF9',
         gray: '#F2F2F2',
+        'light-gray': '#B3B3B3',
       },
       spacing: {
-        bw: '305.6px',
-        sw: '150px',
-        bh: '65.6px',
-        sh: '32px',
+        9: '38px',
+        14: '55px',
+        36: '150px',
+        62: '252px',
+        100: '385px',
       },
     },
     screens: {

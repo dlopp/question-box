@@ -1,28 +1,26 @@
 <template>
   <div class="mb-2">
-    <div class="flex bg-white items-center pl-8 py-2">
+    <div
+      class="flex bg-white pl-8 pb-3 cursor-pointer"
+      @click="accordionToggle()"
+    >
       <img
-        class="inline-block h-8"
+        class="mt-4 h-8"
         src="~/assets/images/question.png"
         alt="Qのアイコン"
       />
-      <button
-        type="button"
-        class="h-12 w-full text-left pl-5 text-sm md:text-base"
-        style="outline: none"
-        @click="accordionToggle()"
-      >
+      <p class="w-full pl-5 mt-5 text-sm md:text-base leading-5">
         {{ question }}
-      </button>
+      </p>
       <img
         v-if="isOpen"
-        class="inline-block h-3 pr-10"
+        class="h-3 ml-2 pr-6 mt-6"
         src="~/assets/images/up.png"
         alt="矢印"
       />
       <img
         v-else
-        class="inline-block h-3 pr-10"
+        class="h-3 ml-2 pr-6 mt-6"
         src="~/assets/images/down.png"
         alt="矢印"
       />
@@ -34,13 +32,15 @@
       @before-leave="beforeLeave"
       @leave="leave"
     >
-      <div v-if="isOpen" class="js-accordion-target flex pl-8 pt-4 bg-details">
+      <div v-if="isOpen" class="js-accordion-target flex pl-8 bg-details">
         <img
-          class="inline-block h-8"
+          class="h-8 mt-4"
           src="~/assets/images/answer.png"
           alt="Aのアイコン"
         />
-        <p class="pl-5 leading-6 pr-4 text-sm md:text-base">
+        <p
+          class="pl-5 -mt-2 leading-6 pr-4 text-sm md:text-base whitespace-pre-line"
+        >
           {{ answer }}
         </p>
       </div>

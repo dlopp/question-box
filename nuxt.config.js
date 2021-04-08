@@ -60,7 +60,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-scrollto', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -78,7 +78,7 @@ export default {
       '@nuxtjs/google-fonts',
       {
         families: {
-          'M+PLUS+1p': [100, 300, 400, 500, 700, 800, 900],
+          'M+PLUS+1p': [400],
         },
         display: 'block',
         download: true, // font optimization
