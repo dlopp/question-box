@@ -9,6 +9,7 @@ module.exports = {
     './pages/**/*.{vue,js}',
     './nuxt.config.js',
   ],
+  plugins: [],
   theme: {
     extend: {
       colors: {
@@ -24,6 +25,7 @@ module.exports = {
         36: '150px',
         62: '252px',
         100: '385px',
+        120: '430px',
       },
     },
     screens: {

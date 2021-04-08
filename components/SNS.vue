@@ -4,10 +4,11 @@
       title="SNS"
       :img-src="srcSNS"
       img-alt="しずくのアイコン"
+      img-size="h-14"
       class="mb-5 md:mb-8"
     />
     <ul
-      class="flex justify-between items-center px-1 mx-auto md:max-w-sm max-w-xs"
+      class="flex justify-between items-center px-1 text-lg mx-auto md:max-w-sm max-w-xs"
     >
       <li class="underline hover:no-underline">
         <a href="https://twitter.com/wucrea_dlopp">dlopp公式Twitter</a>

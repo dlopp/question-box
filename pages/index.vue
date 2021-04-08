@@ -1,6 +1,10 @@
 <template>
   <main>
-    <HeadLine @toPastQuestions="toPastQuestions" @toDoQuestion="toDoQuestion" />
+    <HeadLine
+      class="mb-20"
+      @toPastQuestions="toPastQuestions"
+      @toDoQuestion="toDoQuestion"
+    />
     <LayoutsContainer>
       <PartsTitle
         id="doQuestion"
@@ -23,7 +27,8 @@
       img-alt="QandAのアイコン"
       class="-mb-8 mt-24"
     />
-    <div class="bg-gray py-16">
+    <div class="bg-gray py-24 relative mt-10">
+      <ShapesMiddle />
       <LayoutsContainer>
         <PartsQandA
           v-for="(question, index) in questions"
@@ -32,10 +37,12 @@
           :answer="question.answer"
         />
       </LayoutsContainer>
+      <ShapesMiddle :is-top="false" />
     </div>
-    <LayoutsContainer class="mt-12 mb-6">
+    <LayoutsContainer class="mt-12 mb-20">
       <SNS />
     </LayoutsContainer>
+    <ShapesBottom />
   </main>
 </template>
 

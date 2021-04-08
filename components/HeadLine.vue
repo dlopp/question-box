@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-main h-56 md:h-100 md:pt-16 pt-12">
+  <div class="h-56 md:h-120 md:pt-16 pt-12 relative overflow-hidden">
+    <ShapesTop />
     <LayoutsContainer>
       <img
         class="mb-2 md:mb-4 pl-10 md:pl-20 h-16 md:h-20"
