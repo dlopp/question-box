@@ -9,6 +9,7 @@ module.exports = {
     './pages/**/*.{vue,js}',
     './nuxt.config.js',
   ],
+  plugins: [],
   theme: {
     extend: {
       colors: {
