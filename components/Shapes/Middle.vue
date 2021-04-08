@@ -58,8 +58,8 @@ svg {
 
 @media (max-width: 767px) {
   svg {
-    width: calc(142% + 1.3px);
-    height: 79px;
+    width: calc(152% + 1.3px);
+    height: 68px;
   }
 }
 </style>

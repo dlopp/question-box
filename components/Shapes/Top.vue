@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .top {
     width: 800px;
     height: 230px;
