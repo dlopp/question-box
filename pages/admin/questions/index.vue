@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  // middleware: 'authenticated',
+  middleware: 'authenticated',
   async asyncData({ app }) {
     const questions = []
     await app.$fire.firestore
