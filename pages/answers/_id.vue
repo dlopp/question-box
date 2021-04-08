@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  middleware: 'answerToIndex',
   async asyncData({ app, params }) {
     const answerDoc = await app.$fire.firestore
       .collection('answers')
