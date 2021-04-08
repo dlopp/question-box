@@ -1,5 +1,5 @@
 <template>
-  <div class="h-56 md:h-100 md:pt-16 pt-12 relative">
+  <div class="h-56 md:h-120 md:pt-16 pt-12 relative overflow-hidden">
     <ShapesTop />
     <LayoutsContainer>
       <img

@@ -39,7 +39,7 @@
       </LayoutsContainer>
       <ShapesMiddle :is-top="false" />
     </div>
-    <LayoutsContainer class="mt-12 mb-6">
+    <LayoutsContainer class="mt-12 mb-20">
       <SNS />
     </LayoutsContainer>
     <ShapesBottom />

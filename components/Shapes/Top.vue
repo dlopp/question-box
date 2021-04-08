@@ -61,12 +61,18 @@
 <style scoped>
 .top {
   width: 100%;
-  height: 425px;
-  overflow: hidden;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .top {
+    width: 1200px;
+    height: 400px;
+  }
 }
 
 @media (max-width: 768px) {
