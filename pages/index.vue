@@ -1,6 +1,10 @@
 <template>
   <main>
-    <HeadLine @toPastQuestions="toPastQuestions" @toDoQuestion="toDoQuestion" />
+    <HeadLine
+      class="mb-20"
+      @toPastQuestions="toPastQuestions"
+      @toDoQuestion="toDoQuestion"
+    />
     <LayoutsContainer>
       <PartsTitle
         id="doQuestion"
