@@ -1,20 +1,23 @@
 <template>
-  <div>
-    <button @click="logout">ログアウト</button>
+  <LayoutsContainer>
+    <button class="bg-main px-6 py-3 rounded-md my-3" @click="logout">
+      ログアウト
+    </button>
     <ul>
-      <li v-for="(question, index) in questions" :key="index">
+      <li v-for="(question, index) in questions" :key="index" class="mb-6">
+        <span v-if="question.isReplied" class="bg-red-300">回答済み</span>
+        <span v-else class="bg-blue-300">未回答</span>
         <nuxt-link :to="'/admin/questions/' + question.id">{{
           question.body
         }}</nuxt-link>
-        <span v-if="question.isReplied">回答済み</span>
       </li>
     </ul>
-  </div>
+  </LayoutsContainer>
 </template>
 
 <script>
 export default {
-  middleware: 'authenticated',
+  // middleware: 'authenticated',
   async asyncData({ app }) {
     const questions = []
     await app.$fire.firestore
