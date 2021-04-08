@@ -68,9 +68,9 @@
   z-index: -1;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .top {
-    width: 1200px;
+    width: 1400px;
     height: 400px;
   }
 }
