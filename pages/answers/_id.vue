@@ -1,12 +1,40 @@
 <template>
   <main>
-    <LayoutsContainer>
+    <div
+      class="bg-gray md:h-140 pt-10 mb-24 pb-16 relative h-120"
+      style="z-index: -2; height: 500px"
+    >
+      <LayoutsContainer>
+        <div class="mx-auto w-full px-14 md:px-0">
+          <img
+            :src="
+              'https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:' +
+              question.body +
+              ',co_rgb:333,w_600,c_fit/v1617897038/ogp-q_tph0i7.png'
+            "
+            alt="質問が書いてある画像"
+            class="block"
+          />
+          <div class="bg-white flex">
+            <img
+              src="~/assets/images/answer.png"
+              alt="Aのマーク"
+              class="h-8 mt-3 ml-3"
+            />
+            <p class="w-full pl-5 mt-3 pr-3 pb-3 leading-5">
+              {{ answer.body }}
+            </p>
+          </div>
+        </div>
+      </LayoutsContainer>
+      <ShapesMiddle :is-top="false" />
+    </div>
+    <LayoutsContainer class="-mt-20">
       <PartsTitle
-        id="doQuestion"
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
-        class="mb-8"
+        class="mb-3"
       />
       <Form
         v-model="questionBody"
@@ -16,13 +44,14 @@
       />
     </LayoutsContainer>
     <PartsTitle
-      id="pastQuestions"
       title="過去に答えた質問"
       :img-src="srcQA"
       img-alt="QandAのアイコン"
-      class="-mb-8 mt-24"
+      class="-mb-24 mt-12"
+      img-size="h-10"
+      margin="mb-2"
     />
-    <div class="bg-gray py-24 relative mt-10">
+    <div class="bg-gray pt-20 pb-16 relative mt-10" style="z-index: -2">
       <ShapesMiddle />
       <LayoutsContainer>
         <PartsQandA
@@ -34,7 +63,7 @@
       </LayoutsContainer>
       <ShapesMiddle :is-top="false" />
     </div>
-    <LayoutsContainer class="mt-12 mb-20">
+    <LayoutsContainer class="mb-16">
       <SNS />
     </LayoutsContainer>
   </main>
@@ -107,7 +136,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:言語は何を使用しているんですか？%20自分Pythonなんですが大丈夫ですか？,co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
+          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${this.question.body},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
         },
         {
           hid: 'twitter:image',
