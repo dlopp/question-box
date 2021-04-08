@@ -44,7 +44,10 @@
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
 export default {
+  middleware: 'notAuthenticated',
   data() {
     return {
       email: '',
@@ -56,19 +59,20 @@ export default {
     async login() {
       // 入力がなかった時
       if (!this.email.length || !this.password.length) {
-        this.$toast.error('入力してください')
+        alert('入力してください')
         return
       }
       const auth = await this.$fire.auth
         .signInWithEmailAndPassword(this.email, this.password)
         .catch(() => {
           // メアドとパスワードが間違ってた時
-          this.$toast.error('メールアドレスまたはパスワードが間違っています。')
+          alert('メールアドレスまたはパスワードが間違っています。')
           return null
         })
       // あってたら、authをstoreにcommitして保持
       if (auth) {
         this.$store.commit('mutateAuth', auth)
+        Cookie.set('auth', auth)
         this.$router.push('/admin/questions')
       }
     },
