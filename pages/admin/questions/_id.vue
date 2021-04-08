@@ -1,33 +1,38 @@
 <template>
-  <div>
-    <h2>{{ question.body }}</h2>
+  <LayoutsContainer>
+    <h2 class="mt-3">{{ question.body }}</h2>
     <div>
-      <h3 v-if="question.isReplied">{{ question.answer }}</h3>
+      <h3 v-if="question.isReplied" class="mt-6">
+        {{ question.answer }}
+      </h3>
       <form v-else @submit.prevent="onSubmit">
         <textarea
           v-model="textInput"
           placeholder="回答を入力してください"
           cols="30"
           rows="10"
-          class="bg-gray-200"
+          class="bg-gray-200 mt-6 w-full p-3"
         ></textarea>
         <div>
           <div v-if="isSending">
             <span>送信中</span>
           </div>
-          <button v-else type="submit" class="bg-gray-600">
+          <button
+            v-else
+            type="submit"
+            class="bg-main px-6 py-3 rounded-md my-3"
+          >
             回答を送信する
           </button>
         </div>
       </form>
     </div>
-  </div>
+  </LayoutsContainer>
 </template>
 
 <script>
 export default {
   middleware: 'authenticated',
-  // 質問内容を取得する処理
   async asyncData({ app, params }) {
     const questionDoc = await app.$fire.firestore
       .collection('questions')
