@@ -1,13 +1,8 @@
 <template>
   <main>
-    <HeadLine
-      class="md:mb-20 mb-6"
-      @toPastQuestions="toPastQuestions"
-      @toDoQuestion="toDoQuestion"
-    />
+    <HeadLine class="md:mb-20 mb-6" />
     <LayoutsContainer>
       <PartsTitle
-        id="doQuestion"
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
@@ -21,7 +16,6 @@
       />
     </LayoutsContainer>
     <PartsTitle
-      id="pastQuestions"
       title="過去に答えた質問"
       :img-src="srcQA"
       img-alt="QandAのアイコン"
@@ -42,7 +36,6 @@
     <LayoutsContainer class="mt-12 mb-20">
       <SNS />
     </LayoutsContainer>
-    <ShapesBottom />
   </main>
 </template>
 
@@ -102,12 +95,6 @@ export default {
       // 送信完了
       this.isSending = false
       alert('送信されました。')
-    },
-    toDoQuestion() {
-      this.$scrollTo('#doQuestion')
-    },
-    toPastQuestions() {
-      this.$scrollTo('#pastQuestions')
     },
   },
 }
