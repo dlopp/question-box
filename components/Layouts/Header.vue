@@ -4,7 +4,7 @@
       <nuxt-link class="ml-5" to="/">
         <img
           class="inline-block h-8"
-          src="~/assets/images/header.png"
+          src="~/assets/images/dlopp-logo-header.png"
           alt="dlopp"
         />
       </nuxt-link>

@@ -3,8 +3,8 @@
     <ShapesTop />
     <LayoutsContainer>
       <img
-        class="mb-2 pl-5 h-16 animate__fadeInUp animate__animated"
-        src="~/assets/images/hero2x.png"
+        class="mb-2 -ml-2 pl-5 h-16 animate__fadeInUp animate__animated"
+        src="~/assets/images/dlopp-logo-white.png"
         alt="ロゴ"
       />
       <p
