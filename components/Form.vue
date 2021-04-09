@@ -1,10 +1,10 @@
 <template>
   <form>
-    <div class="w-10/12 sm:w-full mx-auto h-36">
+    <div class="w-11/12 sm:w-full mx-auto h-36">
       <textarea
         :value="formBody"
         :placeholder="placeholder"
-        class="bg-white border-2 border-light-gray rounded-lg p-3 block w-full h-full"
+        class="bg-white border-1 md:border-2 border-light-gray rounded-lg p-3 block w-full h-full"
         style="outline: none"
         @input="input"
       ></textarea>
