@@ -13,7 +13,12 @@
       <span>送信中</span>
     </div>
     <div v-else class="justify-center flex mt-4">
-      <PartsButton message="送信する" bg-color="bg-accent" @click="onClick" />
+      <PartsButton
+        message="送信する"
+        bg-color="bg-accent"
+        hovered-color="hover:bg-hoverd-accent"
+        @click="onClick"
+      />
     </div>
   </form>
 </template>

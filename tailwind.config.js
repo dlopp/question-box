@@ -18,6 +18,7 @@ module.exports = {
         details: '#EDFAF9',
         gray: '#F2F2F2',
         'light-gray': '#B3B3B3',
+        'hoverd-accent': '#FFC25A',
       },
       spacing: {
         9: '38px',
