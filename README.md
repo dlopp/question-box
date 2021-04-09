@@ -2,7 +2,6 @@
 
 Question Boxはdlopp専用の質問箱です。
 
-
 ## :camera_flash: Screenshot
 ![screenshot](./static/screenshot.png)
 
@@ -16,7 +15,7 @@ Question Boxはdlopp専用の質問箱です。
 ```bash
   # リポジトリをローカルにクローン
     git clone https://github.com/dlopp/question-box.git
-  # クローン下リポジトリに移動
+  # クローンしたリポジトリに移動
     cd question-box
   # npm経由でyarnをインストール
     npm install -g yarn
