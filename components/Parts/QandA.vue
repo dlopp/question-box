@@ -1,7 +1,7 @@
 <template>
   <div class="mb-2">
     <div
-      class="bg-white flex cursor-pointer hover:bg-details"
+      class="bg-white flex cursor-pointer md:hover:bg-details"
       @click="accordionToggle"
     >
       <img
