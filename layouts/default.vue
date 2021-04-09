@@ -14,7 +14,10 @@ export default {
     }
   },
   mounted() {
-    this.display = true
+    // ビュー全体がレンダリングされた後に全体を表示する
+    this.$nextTick(function () {
+      this.display = true
+    })
   },
 }
 </script>
