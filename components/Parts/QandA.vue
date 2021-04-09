@@ -34,7 +34,7 @@
       @before-leave="beforeLeave"
       @leave="leave"
     >
-      <div v-show="isOpen" class="bg-details flex js-accordion-target">
+      <div v-show="isOpen" class="bg-details flex accordion-target">
         <img
           src="~/assets/images/answer.png"
           alt="Aのマーク"
@@ -89,21 +89,21 @@ export default {
 </script>
 
 <style scoped>
-.js-accordion-target {
+.accordion-target {
   transition: height 0.4s ease-in-out;
   overflow: hidden;
 }
-.js-accordion-enter-active {
+.accordion-enter-active {
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-name: js-accordion--anime__opend;
+  animation-name: accordion--anime__opened;
 }
-.js-accordion-leave-active {
+.accordion-leave-active {
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-name: js-accordion--anime__closed;
+  animation-name: accordion--anime__closed;
 }
-@keyframes js-accordion--anime__opend {
+@keyframes accordion--anime__opened {
   0% {
     opacity: 0;
   }
@@ -111,7 +111,7 @@ export default {
     opacity: 1;
   }
 }
-@keyframes js-accordion--anime__closed {
+@keyframes accordion--anime__closed {
   0% {
     opacity: 1;
   }

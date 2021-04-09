@@ -1,10 +1,26 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div v-show="display" class="flex flex-col min-h-screen">
     <LayoutsHeader />
     <Nuxt class="flex-grow" />
     <ShapesBottom />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      display: false,
+    }
+  },
+  mounted() {
+    // ビュー全体がレンダリングされた後に全体を表示する
+    this.$nextTick(function () {
+      this.display = true
+    })
+  },
+}
+</script>
 
 <style>
 html {
