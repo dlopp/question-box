@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <LayoutsHeader />
-    <Nuxt />
+    <Nuxt class="flex-grow" />
     <ShapesBottom />
   </div>
 </template>
