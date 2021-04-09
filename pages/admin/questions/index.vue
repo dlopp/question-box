@@ -19,7 +19,7 @@
 const Cookie = process.client ? require('js-cookie') : undefined
 
 export default {
-  // middleware: 'authenticated',
+  middleware: 'authenticated',
   async asyncData({ app }) {
     const questions = []
     await app.$fire.firestore
