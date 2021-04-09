@@ -1,6 +1,9 @@
 <template>
   <div class="mb-2">
-    <div class="bg-white flex cursor-pointer" @click="accordionToggle">
+    <div
+      class="bg-white flex cursor-pointer hover:bg-details"
+      @click="accordionToggle"
+    >
       <img
         src="~/assets/images/question.png"
         alt="Aのマーク"
