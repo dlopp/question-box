@@ -113,11 +113,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  // vue-tosted settings
-  // https://github.com/shakee93/vue-toasted
-  toast: {
-    position: 'top-right',
-    duration: 5000,
-  },
 }
