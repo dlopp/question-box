@@ -1,17 +1,12 @@
 <template>
   <main>
-    <HeadLine
-      class="md:mb-20 mb-6"
-      @toPastQuestions="toPastQuestions"
-      @toDoQuestion="toDoQuestion"
-    />
-    <LayoutsContainer>
+    <HeadLine />
+    <LayoutsContainer class="md:-mt-20">
       <PartsTitle
-        id="doQuestion"
         title="気軽に質問してみよう！"
         :img-src="srcForm"
         img-alt="吹き出しのアイコン"
-        class="mb-8"
+        class="mb-3"
       />
       <Form
         v-model="questionBody"
@@ -20,14 +15,15 @@
         @click="onSubmit"
       />
     </LayoutsContainer>
-    <PartsTitle
-      id="pastQuestions"
-      title="過去に答えた質問"
-      :img-src="srcQA"
-      img-alt="QandAのアイコン"
-      class="-mb-8 mt-24"
-    />
-    <div class="bg-gray py-24 relative mt-10">
+    <div class="bg-gray pt-20 pb-16 relative mt-10">
+      <PartsTitle
+        title="過去に答えた質問"
+        :img-src="srcQA"
+        img-alt="QandAのアイコン"
+        class="-mt-24 mb-8"
+        img-size="h-10"
+        margin="mb-2"
+      />
       <ShapesMiddle />
       <LayoutsContainer>
         <PartsQandA
@@ -39,10 +35,9 @@
       </LayoutsContainer>
       <ShapesMiddle :is-top="false" />
     </div>
-    <LayoutsContainer class="mt-12 mb-20">
+    <LayoutsContainer class="mb-16">
       <SNS />
     </LayoutsContainer>
-    <ShapesBottom />
   </main>
 </template>
 
@@ -102,12 +97,6 @@ export default {
       // 送信完了
       this.isSending = false
       alert('送信されました。')
-    },
-    toDoQuestion() {
-      this.$scrollTo('#doQuestion')
-    },
-    toPastQuestions() {
-      this.$scrollTo('#pastQuestions')
     },
   },
 }

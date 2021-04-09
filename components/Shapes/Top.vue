@@ -61,7 +61,7 @@
 <style scoped>
 .top {
   width: 100%;
-  height: 100%;
+  height: 280px;
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +71,7 @@
 @media (max-width: 1200px) {
   .top {
     width: 1400px;
-    height: 400px;
+    height: 250px;
   }
 }
 

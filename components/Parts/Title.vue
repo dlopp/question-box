@@ -1,12 +1,12 @@
 <template>
   <div>
     <img
-      class="mx-auto mb-2 md:mb-3"
-      :class="imgSize"
+      class="mx-auto"
+      :class="[imgSize, margin]"
       :src="imgSrc"
       :alt="imgAlt"
     />
-    <h2 class="text-center text-base md:text-2xl">
+    <h2 class="text-center" :class="textSize">
       {{ title }}
     </h2>
   </div>
@@ -29,7 +29,15 @@ export default {
     },
     imgSize: {
       type: String,
-      default: 'h-10',
+      default: 'h-8',
+    },
+    margin: {
+      type: String,
+      default: 'mb-1',
+    },
+    textSize: {
+      type: String,
+      default: 'text-base',
     },
   },
 }

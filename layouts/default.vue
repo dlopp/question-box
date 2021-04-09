@@ -2,6 +2,7 @@
   <div>
     <LayoutsHeader />
     <Nuxt />
+    <ShapesBottom />
   </div>
 </template>
 
