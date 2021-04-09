@@ -24,6 +24,7 @@
 <style scoped>
 /* from https://animate.style/ */
 .animate__animated {
+  transition: 1s ease-in-out;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
