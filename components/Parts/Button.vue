@@ -24,7 +24,7 @@ export default {
     },
     hoveredColor: {
       type: String,
-      default: 'hover:F2F2F2',
+      default: 'hover:bg-gray',
     },
   },
   methods: {
