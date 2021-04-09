@@ -25,7 +25,7 @@
         margin="mb-2"
       />
       <ShapesMiddle />
-      <LayoutsContainer>
+      <LayoutsContainer class="md:mb-12">
         <PartsQandA
           v-for="(question, index) in questions"
           :key="index"
