@@ -9,10 +9,7 @@
         @input="input"
       ></textarea>
     </div>
-    <div v-if="isSending">
-      <span>送信中</span>
-    </div>
-    <div v-else class="justify-center flex mt-4">
+    <div v-if="!isSending" class="justify-center flex mt-4">
       <PartsButton
         message="送信する"
         bg-color="bg-accent"
