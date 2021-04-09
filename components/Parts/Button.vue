@@ -2,7 +2,7 @@
   <a class="cursor-pointer" @click="linkClick">
     <button
       class="flex justify-center items-center rounded-full text-base w-36 h-9 md:w-40 md:h-10"
-      :class="bgColor"
+      :class="[bgColor, hoveredColor]"
       style="outline: none"
       @click.prevent="onClick"
     >
@@ -21,6 +21,10 @@ export default {
     bgColor: {
       type: String,
       default: 'bg-white',
+    },
+    hoveredColor: {
+      type: String,
+      default: 'hover:F2F2F2',
     },
   },
   methods: {
