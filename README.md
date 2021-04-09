@@ -33,6 +33,8 @@ Question Boxはdlopp専用の質問箱です。
   - Firebase Authentication
   - Cloud Firestore
 - Cloudinary
+- Xd
+- Illustrator
 
 ## :books: Reference
 - [Peing(ペイング) -質問箱- 匿名で質問を受け取ろう](https://peing.net/ja/)
