@@ -1,7 +1,7 @@
 <template>
   <div class="h-64 md:h-100 pt-12 relative overflow-hidden">
     <ShapesTop />
-    <LayoutsContainer v-if="animation">
+    <LayoutsContainer>
       <img
         class="mb-2 pl-5 h-16 animate__fadeInUp animate__animated"
         src="~/assets/images/hero2x.png"
@@ -20,22 +20,6 @@
     </LayoutsContainer>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      animation: false,
-    }
-  },
-  // DOM構築後にアニメーションをかける
-  // ロゴの表示に少し時間がかかるので
-  // https://jp.vuejs.org/v2/api/#mounted
-  mounted() {
-    this.animation = true
-  },
-}
-</script>
 
 <style scoped>
 /* from https://animate.style/ */

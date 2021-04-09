@@ -1,10 +1,23 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div v-show="display" class="flex flex-col min-h-screen">
     <LayoutsHeader />
     <Nuxt class="flex-grow" />
     <ShapesBottom />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      display: false,
+    }
+  },
+  mounted() {
+    this.display = true
+  },
+}
+</script>
 
 <style>
 html {
