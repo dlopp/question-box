@@ -1,17 +1,13 @@
 <template>
   <main>
     <div
-      class="bg-gray md:h-140 pt-10 mb-24 pb-16 relative h-120"
-      style="z-index: -2; height: 500px"
+      class="bg-gray md:h-140 pt-6 md:pt-10 mb-24 pb-16 relative"
+      style="z-index: -2"
     >
       <LayoutsContainer>
-        <div class="mx-auto w-full px-14 md:px-0">
+        <div class="mx-auto w-full px-6 md:px-0">
           <img
-            :src="
-              'https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:' +
-              question.body +
-              ',co_rgb:333,w_600,c_fit/v1617897038/ogp-q_tph0i7.png'
-            "
+            :src="`https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${question.body},co_rgb:333,w_600,c_fit/v1617897038/ogp-q_tph0i7.png`"
             alt="質問が書いてある画像"
             class="block"
           />
@@ -19,9 +15,11 @@
             <img
               src="~/assets/images/answer.png"
               alt="Aのマーク"
-              class="h-8 mt-3 ml-3"
+              class="h-8 mt-4 ml-4 md:h-12 md:ml-8"
             />
-            <p class="w-full pl-5 mt-3 pr-3 pb-3 leading-5">
+            <p
+              class="text-sm mt-4 pl-4 pr-6 leading-5 w-full md:pl-5 md:mt-5 pb-5 md:text-lg md:leading-6"
+            >
               {{ answer.body }}
             </p>
           </div>
