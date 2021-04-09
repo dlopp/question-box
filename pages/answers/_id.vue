@@ -18,7 +18,7 @@
               class="h-8 mt-4 ml-4 md:h-12 md:ml-8"
             />
             <p
-              class="text-sm mt-4 pl-4 pr-6 leading-5 w-full md:pl-5 md:mt-5 pb-5 md:text-lg md:leading-6"
+              class="text-sm pl-4 pr-6 leading-5 w-full md:pl-5 md:text-lg md:leading-6 whitespace-pre-line"
             >
               {{ answer.body }}
             </p>
