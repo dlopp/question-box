@@ -16,7 +16,7 @@
       <PartsButton
         message="送信する"
         bg-color="bg-accent"
-        hovered-color="hover:bg-hoverd-accent"
+        hovered-color="hover:bg-hovered-accent"
         @click="onClick"
       />
     </div>
