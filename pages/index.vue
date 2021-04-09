@@ -20,7 +20,7 @@
         title="過去に答えた質問"
         :img-src="srcQA"
         img-alt="QandAのアイコン"
-        class="-mt-24 mb-8"
+        class="-mt-24 mb-8 relative z-10"
         img-size="h-10"
         margin="mb-2"
       />
