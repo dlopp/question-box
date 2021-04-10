@@ -5,7 +5,7 @@ Question Boxはdlopp専用の質問箱です。
 ![screenshot](./static/screenshot.png)
 
 ## :recycle: Changelog
-[CHANGELOG.md](CHANGELOG.md)
+- [CHANGELOG.md](CHANGELOG.md)
 
 ## :earth_asia: Roadmap
 - https://github.com/dlopp/question-box/projects/1
@@ -34,6 +34,7 @@ Question Boxはdlopp専用の質問箱です。
 - Cloudinary
 - Adobe XD
 - Adobe Illustrator
+- Heroku
 
 ## :books: Reference
 - [Peing(ペイング) -質問箱- 匿名で質問を受け取ろう](https://peing.net/ja/)
