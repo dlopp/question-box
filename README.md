@@ -2,10 +2,9 @@
 
 Question Boxはdlopp専用の質問箱です。
 
-## :camera_flash: Screenshot
 ![screenshot](./static/screenshot.png)
 
-## :recycle: Change Log
+## :recycle: Changelog
 [CHANGELOG.md](CHANGELOG.md)
 
 ## :earth_asia: Roadmap
@@ -26,7 +25,7 @@ Question Boxはdlopp専用の質問箱です。
   # ctrl + c でサーバーを停止できます。
 ```
 
-## :zap: Technologies used
+## :zap: Technologies Used
 - Nuxt.js
 - Tailwind CSS
 - Firebase
