@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/dlopp/question-box/compare/v1.0.0...v1.0.1) (2021-04-13)
+
+
+### Update Docs
+
+* :memo: README修正 ([e61f458](https://github.com/dlopp/question-box/commit/e61f458f1136fec4f8b256a49cbde4f205401d88))
+* :memo: READNE微調整 ([0a64fc8](https://github.com/dlopp/question-box/commit/0a64fc863f73f410394fe77e2ed7b9fda3cf3a07))
+
+
+### Update UI
+
+* :art: answersのmargin修正 ([dc5f302](https://github.com/dlopp/question-box/commit/dc5f30237dead4164b439e904a1369acdb1eeee4))
+* :art: md以上でanswersページのUI崩れるの修正 ([54b9b23](https://github.com/dlopp/question-box/commit/54b9b23e98019454d40b68d3bc2054b8e96fcabd))
+
 ## 1.0.0 (2021-04-09)
 
 
