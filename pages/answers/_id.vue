@@ -1,9 +1,6 @@
 <template>
   <main>
-    <div
-      class="bg-gray md:h-140 pt-6 md:pt-10 mb-24 pb-16 relative"
-      style="z-index: -2"
-    >
+    <div class="bg-gray pt-6 md:pt-10 mb-24 pb-16 relative" style="z-index: -2">
       <LayoutsContainer>
         <div class="mx-auto w-full px-6 md:px-0">
           <img
