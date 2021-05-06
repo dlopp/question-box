@@ -3,11 +3,7 @@
     <div class="bg-gray pt-6 md:pt-10 mb-24 pb-16 relative" style="z-index: -2">
       <LayoutsContainer>
         <div class="mx-auto w-full px-6 md:px-0">
-          <img
-            :src="`https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${question.body},co_rgb:333,w_600,c_fit/v1617897038/ogp-q_tph0i7.png`"
-            alt="質問が書いてある画像"
-            class="block"
-          />
+          <img :src="ogpImage" alt="質問が書いてある画像" class="block" />
           <div class="bg-white flex">
             <img
               src="~/assets/images/answer.png"
@@ -131,15 +127,22 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${this.question.body},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
+          content: this.ogpImage,
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${this.question.body},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`,
+          content: this.ogpImage,
         },
       ],
     }
+  },
+  computed: {
+    ogpImage() {
+      const ogpText = encodeURI(this.question.body)
+      const ogpImage = `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${ogpText},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`
+      return encodeURI(ogpImage)
+    },
   },
   methods: {
     async onSubmit() {
