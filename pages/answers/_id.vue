@@ -141,7 +141,7 @@ export default {
     ogpImage() {
       const ogpText = encodeURI(this.question.body)
       const ogpImage = `https://res.cloudinary.com/dxfzpd78t/image/upload/l_text:ozopbvhnoiumgyir0pgk.ttf_35_center:${ogpText},co_rgb:333,w_600,c_fit/v1617887133/ogp2_heqplk.png`
-      return encodeURI(ogpImage)
+      return ogpImage
     },
   },
   methods: {
