@@ -19,7 +19,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,vue,json}": [
+    "*.{js,vue}": [
       "yarn format",
       "git add"
     ]
