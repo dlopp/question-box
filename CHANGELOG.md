@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/dlopp/question-box/compare/v1.0.1...v1.0.2) (2021-05-07)
+
+
+### Features
+
+* :sparkles: commit前に自動整形 ([d0930ca](https://github.com/dlopp/question-box/commit/d0930cad9ac3ca3ad130491a55c91fa5855a4256)), closes [#90](https://github.com/dlopp/question-box/issues/90)
+
+
+### Bug Fixes
+
+* :adhesive_bandage: 特殊文字をエンコードする ([5cb3d7f](https://github.com/dlopp/question-box/commit/5cb3d7f18169522b05d4c6ed84ca9d317bb3096e)), closes [#86](https://github.com/dlopp/question-box/issues/86)
+
+
+### Update Dependencies
+
+* :package: husky アップデート ([b35b6cb](https://github.com/dlopp/question-box/commit/b35b6cb417291ae2494a1f755cd93925952a684a))
+
+
+### Code Refactoring
+
+* :recycle: lint-staged調整 ([af2f144](https://github.com/dlopp/question-box/commit/af2f14489fee05bf6e46738a2a4ce4ab51058635))
+* :recycle: 寝ぼけて2回エンコードしてた ([9441fdb](https://github.com/dlopp/question-box/commit/9441fdbf42d2501367c55cba121ef77442fd132e))
+
 ### [1.0.1](https://github.com/dlopp/question-box/compare/v1.0.0...v1.0.1) (2021-04-13)
 
 
