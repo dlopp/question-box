@@ -1,6 +1,6 @@
 # Question Box
 
-Question Boxはdlopp専用の質問箱です。
+Question Boxはdlopp専用の質問箱です！
 
 ![screenshot](./static/screenshot.png)
 
@@ -34,7 +34,7 @@ Question Boxはdlopp専用の質問箱です。
 - Cloudinary
 - Adobe XD
 - Adobe Illustrator
-- Heroku
+- Vercel
 
 ## :books: Reference
 - [Peing(ペイング) -質問箱- 匿名で質問を受け取ろう](https://peing.net/ja/)
